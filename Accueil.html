@@ -2,41 +2,73 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width , initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Explore Morocco - Découvrir le Maroc</title>
-    <meta name="description" content="ExploreMorocco . Votre site pour découvrir les villes et les paysages du Maroc">
+    <meta name="description" content="ExploreMorocco, votre site pour découvrir les villes et les paysages du Maroc">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
-        <button id="menu-button" aria-label="ouvrir-menu" aria-expanded="false" aria-controls="menu-principal">&#9776;</button>
-        <nav id="menu-principal" aria-label="Navigation">
-            <ul>
-                <li><a href="Accueil.html">Accueil</a></li>
-                <li><a href="#">Meilleurs villes </a></li>
-                <li><a href="#">Meilleurs zones naturels </a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-        <a href="Accueil.html" aria-label="ExploreMorocco-Accueil" >
-            <img src="#" alt="Logo ExploreMorocco" width="75px">
+        <a href="Accueil.html" aria-label="ExploreMorocco-Accueil">
+            <img src="images/logo.png" alt="Logo ExploreMorocco" width="75">
         </a>
+        <button id="menu-button" aria-label="ouvrir-menu" aria-expanded="false" aria-controls="menu-principal">☰</button>
+        <nav id="menu-principal" aria-label="Navigation principale" align="center">
+           
+                <a href="Accueil.html" class="active">Accueil</a>   |
+                <a href="villes.html">Meilleures villes</a>   |
+                <a href="nature.html">Zones naturelles</a>   |
+                <a href="contact.html">Contact</a>
+            
+        </nav>
     </header>
+
     <main>
-        <section id="Bienvenue">
+        <!-- 1. Section Bienvenue -->
+        <section id="bienvenue">
             <h1>Bienvenue sur ExploreMorocco</h1>
-            <p>Partez à la découverte du Maroc , un pays très riche en histoire en cultrue et en paysages magnifiques .</p>
-            <img src="#" alt="Vue de Marrackech et de ses paysages">
+            <p>Partez à la découverte du Maroc, un pays très riche en histoire, en culture et en paysages magnifiques.</p>
+            <a href="#a-propos" class="btn">Découvrir notre projet</a>
         </section>
-        <section id="à propos">
+
+        <!-- 2. Section À propos -->
+        <section id="a-propos">
             <h2>À propos de notre site</h2>
-            <p>ExploreMorocco est un projet universitaire réalisé par un groupe d'étudiant.</p>
-            <p>Notre objectif est de faire vous aidez à découvrir la richesse du Maroc.</p>
-            <img src="#" alt="Vue de la ville de Chefchaouen">
+            <p>ExploreMorocco est un projet universitaire réalisé par un groupe d'étudiants passionnés par le Maroc.</p>
+            <p>Notre objectif est de vous aider à découvrir la richesse culturelle et naturelle de notre pays à travers des guides simples et illustrés.</p>
+        </section>
+
+        <!-- 3. Section Liens vers les autres pages -->
+        <section id="decouvrir">
+            <h2>Que voulez-vous explorer ?</h2>
+            <div class="cards">
+    <article>
+        <h3>Les Villes Impériales</h3>
+        <p>De Marrakech à Fès, découvrez l'histoire et la médina des plus belles villes.</p>
+        <!-- Lien Emoji Ville -->
+        <a href="villes.html" aria-label="Voir les villes" style="font-size: 40px; text-decoration: none;">Explorer🕌</a>
+    </article>
+
+    <article>
+        <h3>Zones Naturelles</h3>
+        <p>Du désert de Merzouga aux montagnes de Chefchaouen, explorez des paysages magnifiques.</p>
+        <!-- Lien Emoji Nature -->
+        <a href="nature.html" aria-label="Voir la nature" style="font-size: 40px; text-decoration: none;">Découvrir🏜️</a>
+    </article>
+
+    <article>
+        <h3>Contactez-nous</h3>
+        <p>Une question ? Une suggestion ? L'équipe est à votre écoute.</p>
+        <!-- Lien Emoji Contact -->
+        <a href="contact.html" aria-label="Nous contacter" style="font-size: 40px; text-decoration: none;">Contacter📩</a>
+    </article>
+</div>
         </section>
     </main>
+
     <footer>
-        <p>&copy; 2026 ExploreMorocco</p> 
-        <p>Réalisé par : Ahmed El Baz , Salaheddine Chtioui , Yassine Barkouch , Ayoub Ait Merri</p>
+        <p align="center">&copy; 2026 ExploreMorocco Réalisé par : </p> 
+        <p align="center">Ahmed El Baz, Salaheddine Chtioui, Yassine Barkouch, Ayoub Ait Merri</p>
     </footer>
 </body>
 </html>
