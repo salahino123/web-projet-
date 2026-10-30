@@ -1,7 +1,7 @@
 # ExploreMorocco 🇲🇦
 
 ## Présentation
-ExploreMorocco est un projet scolaire réalisé en groupe. Il a pour objectif de faire découvrir le Maroc, ses villes, sa culture et ses espaces naturels.
+ExploreMorocco est un projet universitaire réalisé en groupe. Il a pour objectif de faire découvrir le Maroc, ses villes, sa culture et ses espaces naturels.
 
 ## Objectifs
 - Présenter les plus belles villes du Maroc.
@@ -14,4 +14,5 @@ ExploreMorocco est un projet scolaire réalisé en groupe. Il a pour objectif de
 - JavaScript
 
 ## Équipe
-Projet réalisé par les membres de notre groupe.
+Projet réalisé par les membres de notre groupe : 
+Ahmed El Baz , Salaheddine Chtioui , Yassine Barkouch , Ayoub Ait Merri 
