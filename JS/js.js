@@ -3,5 +3,5 @@ document.addEventListener('DOMContentLoaded', function() {
   
   setTimeout(() => {
     loader.classList.add('hidden');
-  }, 1300); // مرة وحدة صافي ويختافي
+  }, 1300);
 });
