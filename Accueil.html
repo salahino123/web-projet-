@@ -17,14 +17,24 @@
             <img src="images/explore_morocco_logo_transparent.jpeg" alt="Logo ExploreMorocco" width="75">
         </a>
         <button id="menu-button" aria-label="ouvrir-menu" aria-expanded="false" aria-controls="menu-principal">☰</button>
-        <nav id="menu-principal" aria-label="Navigation principale" align="center">
-           
-                <a href="Accueil.html" class="active">Accueil</a>   |
-                <a href="villes.html">Meilleures villes</a>   |
-                <a href="nature.html">Zones naturelles</a>   |
-                <a href="contact.html">Contact</a>
-            
-        </nav>
+        <nav id="menu-principal">
+  <a href="Accueil.html">Accueil</a> |
+  
+  <span id="villes-wrapper">
+    <a href="#" id="btn-villes">Meilleures villes</a>
+    <span id="liste-villes" style="display: none;">
+      <a href="villes/Chefchaouen.html">Chefchaouen</a> |
+      <a href="villes/Rabat.html">Rabat</a> |
+      <a href="villes/Ouarzazate.html">Ouarzazate</a> |
+      <a href="villes/Marrakech.html">Marrakech</a> |
+      <a href="villes/Fès.html">Fès</a> |
+      <a href="villes/Casablanca.html">Casablanca</a>
+    </span>
+  </span>
+  
+  | <a href="#">Zones naturelles</a> |
+  <a href="#">Contact</a>
+</nav>
     </header>
 
     <main>

@@ -185,7 +185,38 @@ footer{
     padding:20px;
     box-shadow:0 10px 20px rgba(0,0,0,0.1);
   }
-  
+  #villes-wrapper {
+  position: relative;
+}
+
+#liste-villes {
+  display: none; /* f lwl makaybanch */
+  position: absolute;
+  top: 35px; /* kayhbet lte7t */
+  left: 0;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  flex-direction: column;
+  min-width: 180px;
+  z-index: 9999; /* bach yji fo9 dak zr9 */
+  padding: 8px 0;
+  overflow: hidden;
+}
+
+#liste-villes a {
+  display: block;
+  padding: 10px 20px;
+  color: #1e6da8;
+  text-decoration: none;
+  text-align: left;
+}
+
+#liste-villes a:hover {
+  background-color: #1e6da8;
+  color: white;
+}
   #menu-principal.show{
     display:flex;
   }
