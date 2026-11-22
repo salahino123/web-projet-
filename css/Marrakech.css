@@ -1,0 +1,188 @@
+
+/* ============================= */
+/* MARRAKECH PAGE STYLING */
+/* ============================= */
+
+#page-marrakech {
+    --marrakech-red: #a94432;
+    --marrakech-dark: #762f26;
+    --marrakech-gold: #d69b35;
+    --marrakech-sand: #fdf1df;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Header */
+#page-marrakech #bienvenueChef {
+    display: block;
+    position: relative;
+    top: auto;
+    z-index: auto;
+    text-align: center;
+    padding: clamp(65px, 10vw, 110px) 20px;
+    background:
+        repeating-linear-gradient(
+            45deg,
+            transparent 0 24px,
+            rgba(255,255,255,0.045) 24px 26px
+        ),
+        linear-gradient(
+            135deg,
+            var(--marrakech-dark),
+            var(--marrakech-red) 58%,
+            #d69b35
+        );
+    color: white;
+    border-radius: 0 0 42px 42px;
+    box-shadow: none;
+    backdrop-filter: none;
+}
+
+#page-marrakech #bienvenueChef h1 {
+    font-size: clamp(32px, 5vw, 50px);
+    margin-bottom: 12px;
+}
+
+#page-marrakech #bienvenueChef p {
+    max-width: 700px;
+    margin: 0 auto;
+    opacity: 0.94;
+}
+
+/* Navigation */
+#page-marrakech #main-nav {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 14px 5%;
+}
+
+#page-marrakech #main-nav a {
+    margin: 0;
+    padding: 8px 11px;
+    border: 0;
+    border-radius: 8px;
+}
+
+#page-marrakech #main-nav a:hover {
+    background: var(--sand);
+}
+
+/* Main sections */
+#page-marrakech #section-medina,
+#page-marrakech #section-galerie {
+    max-width: 1100px;
+    margin: 48px auto;
+    padding: 0 5%;
+}
+
+#page-marrakech #section-medina h2,
+#page-marrakech #section-galerie h2 {
+    margin: 34px 0 14px;
+    color: var(--marrakech-red);
+    font-size: clamp(25px, 4vw, 32px);
+}
+
+/* Intro paragraph */
+#page-marrakech #section-medina > h2:first-child + p {
+    padding: 22px 24px;
+    background: #fff;
+    border: 1px solid rgba(169,68,50,0.1);
+    border-left: 5px solid var(--marrakech-gold);
+    border-radius: 14px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+/* Lists */
+#page-marrakech #list-monuments,
+#page-marrakech #list-jardins,
+#page-marrakech #list-excursions {
+    list-style: none;
+    display: grid;
+    gap: 15px;
+    margin: 20px 0 30px;
+    padding: 0;
+}
+
+#page-marrakech #list-monuments li,
+#page-marrakech #list-jardins li,
+#page-marrakech #list-excursions li {
+    background: white;
+    padding: 18px 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.06);
+    transition: 0.3s;
+}
+
+#page-marrakech #list-monuments li {
+    border-left: 5px solid var(--marrakech-red);
+}
+
+#page-marrakech #list-jardins li {
+    border-left: 5px solid var(--marrakech-gold);
+}
+
+#page-marrakech #list-excursions li {
+    border-left: 5px solid var(--marrakech-dark);
+}
+
+#page-marrakech #list-monuments li:hover,
+#page-marrakech #list-jardins li:hover,
+#page-marrakech #list-excursions li:hover {
+    transform: translateY(-3px);
+}
+
+/* Gallery */
+#page-marrakech #galerie-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin-top: 24px;
+}
+
+#page-marrakech .galerie-img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border: 4px solid white;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(118,47,38,0.12);
+    transition: transform 0.25s, box-shadow 0.25s;
+}
+
+#page-marrakech .galerie-img:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 14px 30px rgba(118,47,38,0.2);
+}
+
+/* Footer */
+#page-marrakech #main-footer {
+    margin-top: 60px;
+    background: var(--marrakech-dark);
+    color: rgba(255,255,255,0.82);
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    #page-marrakech #main-nav {
+        gap: 2px;
+        padding: 10px 4%;
+    }
+
+    #page-marrakech #main-nav a {
+        font-size: 14px;
+        padding: 7px 8px;
+    }
+
+    #page-marrakech #section-medina,
+    #page-marrakech #section-galerie {
+        margin: 34px auto;
+    }
+
+    #page-marrakech #section-medina > h2:first-child + p {
+        padding: 17px;
+    }
+
+    #page-marrakech .galerie-img {
+        height: 220px;
+    }
+}
