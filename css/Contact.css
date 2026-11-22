@@ -1,0 +1,358 @@
+
+/* =================================
+   GENERAL STYLE
+================================= */
+
+#page-contact {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f6f7;
+    color: #263b43;
+    line-height: 1.7;
+}
+
+/* =================================
+   HEADER
+================================= */
+
+#page-contact #contact-header {
+    background: linear-gradient(135deg, #075b78, #1595a5);
+    color: white;
+    text-align: center;
+    padding: 55px 20px;
+    border-radius: 0 0 25px 25px;
+}
+
+#page-contact #contact-header h1 {
+    font-size: 40px;
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+}
+
+#page-contact #contact-header p {
+    font-size: 17px;
+    max-width: 800px;
+    margin: auto;
+}
+
+/* =================================
+   NAVIGATION
+================================= */
+
+#page-contact #main-nav {
+    background-color: #06485d;
+    padding: 16px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-radius: 12px;
+    margin: 15px 20px;
+}
+
+#page-contact #main-nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+#page-contact #main-nav a:hover,
+#page-contact #main-nav a.active {
+    color: #f4d58d;
+}
+
+/* =================================
+   CONTACT SECTION
+================================= */
+
+#page-contact #contact-section {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+#page-contact .contact-intro {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+#page-contact .contact-intro h2 {
+    color: #08758a;
+    font-size: 30px;
+}
+
+#page-contact .contact-intro p {
+    max-width: 750px;
+    margin: auto;
+}
+
+/* =================================
+   CONTACT CONTAINER
+================================= */
+
+#page-contact .contact-container {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    gap: 25px;
+}
+
+/* =================================
+   CONTACT FORM
+================================= */
+
+#page-contact .contact-form,
+#page-contact .contact-info {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+#page-contact .contact-form h2,
+#page-contact .contact-info h2 {
+    color: #08758a;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+#page-contact .contact-form label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+#page-contact .contact-form input,
+#page-contact .contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbdde1;
+    border-radius: 8px;
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    outline: none;
+    transition: 0.3s;
+}
+
+#page-contact .contact-form input:focus,
+#page-contact .contact-form textarea:focus {
+    border-color: #1595a5;
+    box-shadow: 0 0 5px rgba(21, 149, 165, 0.3);
+}
+
+#page-contact .contact-form textarea {
+    resize: vertical;
+}
+
+/* SEND BUTTON */
+
+#page-contact .contact-form button {
+    width: 100%;
+    margin-top: 22px;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    background-color: #08758a;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#page-contact .contact-form button:hover {
+    background-color: #06485d;
+    transform: translateY(-2px);
+}
+
+/* FORM STATUS */
+
+#page-contact #form-status {
+    color: #08758a;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+/* =================================
+   CONTACT INFORMATION
+================================= */
+
+#page-contact .info-card {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background-color: #f0f6f7;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+#page-contact .info-icon {
+    font-size: 28px;
+}
+
+#page-contact .info-card h3 {
+    color: #08758a;
+    margin: 0;
+}
+
+#page-contact .info-card p {
+    margin: 3px 0 0;
+    overflow-wrap: anywhere;
+}
+
+#page-contact .social-title {
+    margin-top: 30px !important;
+}
+
+/* SOCIAL LINKS */
+
+#page-contact .social-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#page-contact .social-links a {
+    text-decoration: none;
+    background-color: #08758a;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+#page-contact .social-links a:hover {
+    background-color: #06485d;
+}
+
+/* =================================
+   TEAM SECTION
+================================= */
+
+#page-contact #team-section {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 30px;
+    text-align: center;
+}
+
+#page-contact #team-section h2 {
+    color: #08758a;
+    font-size: 30px;
+}
+
+#page-contact #team-section > p {
+    max-width: 750px;
+    margin: 0 auto 30px;
+}
+
+#page-contact .team-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+#page-contact .team-card {
+    background-color: white;
+    padding: 25px 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+}
+
+#page-contact .team-card:hover {
+    transform: translateY(-5px);
+}
+
+#page-contact .team-icon {
+    font-size: 40px;
+}
+
+#page-contact .team-card h3 {
+    color: #08758a;
+    font-size: 17px;
+}
+
+#page-contact .team-card p {
+    color: #64777d;
+    font-size: 14px;
+}
+
+/* =================================
+   FINAL BANNER
+================================= */
+
+#page-contact #contact-banner {
+    background: linear-gradient(135deg, #075b78, #1595a5);
+    color: white;
+    text-align: center;
+    padding: 45px 20px;
+    margin: 40px 20px;
+    border-radius: 20px;
+}
+
+#page-contact #contact-banner h2 {
+    font-size: 28px;
+}
+
+/* =================================
+   FOOTER
+================================= */
+
+#page-contact #main-footer {
+    background-color: #06485d;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    border-radius: 20px 20px 0 0;
+}
+
+#page-contact #main-footer p {
+    margin: 5px;
+}
+
+/* =================================
+   RESPONSIVE DESIGN
+================================= */
+
+@media (max-width: 850px) {
+
+    #page-contact .contact-container {
+        grid-template-columns: 1fr;
+    }
+
+    #page-contact .team-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+
+    #page-contact #contact-header h1 {
+        font-size: 30px;
+    }
+
+    #page-contact #main-nav a {
+        display: inline-block;
+        margin: 7px;
+    }
+
+    #page-contact .contact-form,
+    #page-contact .contact-info {
+        padding: 20px;
+    }
+
+    #page-contact .team-container {
+        grid-template-columns: 1fr;
+    }
+
+    #page-contact #contact-banner h2 {
+        font-size: 23px;
+    }
+}
