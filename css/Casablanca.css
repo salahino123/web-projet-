@@ -1,0 +1,226 @@
+
+/* ============================= */
+/* CASABLANCA PAGE STYLING */
+/* ============================= */
+
+#page-casablanca {
+    --casa-blue: #176b87;
+    --casa-dark: #12445b;
+    --casa-turquoise: #42b7b0;
+    --casa-light: #e5f4f5;
+
+    font-family: 'Poppins', sans-serif;
+    background: #f0f8f8;
+    color: #263b43;
+}
+
+/* HEADER */
+
+#page-casablanca #bienvenueChef {
+    display: block;
+    position: relative;
+    top: auto;
+    z-index: auto;
+    text-align: center;
+
+    padding: clamp(65px, 10vw, 110px) 20px;
+
+    background:
+        repeating-linear-gradient(
+            45deg,
+            transparent 0 24px,
+            rgba(255,255,255,0.045) 24px 26px
+        ),
+        linear-gradient(
+            135deg,
+            var(--casa-dark),
+            var(--casa-blue) 58%,
+            var(--casa-turquoise)
+        );
+
+    color: white;
+    border-radius: 0 0 42px 42px;
+    box-shadow: none;
+    backdrop-filter: none;
+}
+
+#page-casablanca #bienvenueChef h1 {
+    font-size: clamp(32px, 5vw, 50px);
+    margin-bottom: 12px;
+}
+
+#page-casablanca #bienvenueChef p {
+    max-width: 700px;
+    margin: 0 auto;
+    opacity: 0.94;
+}
+
+/* NAVIGATION */
+
+#page-casablanca #main-nav {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 14px 5%;
+}
+
+#page-casablanca #main-nav a {
+    margin: 0;
+    padding: 8px 11px;
+    border: 0;
+    border-radius: 8px;
+}
+
+#page-casablanca #main-nav a:hover {
+    background: var(--casa-light);
+}
+
+/* MAIN SECTIONS */
+
+#page-casablanca #section-medina,
+#page-casablanca #section-galerie {
+    max-width: 1100px;
+    margin: 48px auto;
+    padding: 0 5%;
+}
+
+#page-casablanca #section-medina h2,
+#page-casablanca #section-galerie h2 {
+    margin: 34px 0 14px;
+    color: var(--casa-dark);
+    font-size: clamp(25px, 4vw, 32px);
+}
+
+/* INTRODUCTION */
+
+#page-casablanca #section-medina > h2:first-child + p {
+    padding: 22px 24px;
+    background: white;
+
+    border: 1px solid rgba(23,107,135,0.1);
+    border-left: 5px solid var(--casa-turquoise);
+
+    border-radius: 14px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+/* LISTS */
+
+#page-casablanca #list-monuments,
+#page-casablanca #list-jardins,
+#page-casablanca #list-excursions {
+    list-style: none;
+    display: grid;
+    gap: 15px;
+
+    margin: 20px 0 30px;
+    padding: 0;
+}
+
+#page-casablanca #list-monuments li,
+#page-casablanca #list-jardins li,
+#page-casablanca #list-excursions li {
+    background: white;
+    padding: 18px 20px;
+
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.06);
+
+    transition: 0.3s;
+}
+
+/* DIFFERENT COLORS FOR EACH LIST */
+
+#page-casablanca #list-monuments li {
+    border-left: 5px solid var(--casa-blue);
+}
+
+#page-casablanca #list-jardins li {
+    border-left: 5px solid var(--casa-turquoise);
+}
+
+#page-casablanca #list-excursions li {
+    border-left: 5px solid var(--casa-dark);
+}
+
+/* HOVER EFFECT */
+
+#page-casablanca #list-monuments li:hover,
+#page-casablanca #list-jardins li:hover,
+#page-casablanca #list-excursions li:hover {
+    transform: translateY(-3px);
+}
+
+/* GALLERY */
+
+#page-casablanca #galerie-grid {
+    display: grid;
+
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(220px, 1fr)
+    );
+
+    gap: 20px;
+    margin-top: 24px;
+}
+
+#page-casablanca .galerie-img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+
+    border: 4px solid white;
+    border-radius: 16px;
+
+    box-shadow: 0 8px 24px rgba(18,68,91,0.12);
+
+    transition: transform 0.25s, box-shadow 0.25s;
+}
+
+#page-casablanca .galerie-img:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 14px 30px rgba(18,68,91,0.2);
+}
+
+/* FOOTER */
+
+#page-casablanca #main-footer {
+    margin-top: 60px;
+    background: var(--casa-dark);
+    color: rgba(255,255,255,0.82);
+
+    padding: 30px;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 600px) {
+
+    #page-casablanca #main-nav {
+        gap: 2px;
+        padding: 10px 4%;
+    }
+
+    #page-casablanca #main-nav a {
+        font-size: 14px;
+        padding: 7px 8px;
+    }
+
+    #page-casablanca #section-medina,
+    #page-casablanca #section-galerie {
+        margin: 34px auto;
+    }
+
+    #page-casablanca #section-medina > h2:first-child + p {
+        padding: 17px;
+    }
+
+    #page-casablanca .galerie-img {
+        height: 220px;
+    }
+
+}
