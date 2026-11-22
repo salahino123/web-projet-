@@ -1,1 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Morocco - Découvrir le Maroc</title>
+    <meta name="description" content="ExploreMorocco, votre site pour découvrir les villes et les paysages du Maroc">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/js.js"></script>
+</head>
+<body>
+<div id="page-loader">
+  <img src="images/Explore Morocco Logo.png" alt="Explore Morocco" class="loader-logo">
+</div>
+    <header>
+        <a href="Accueil.html" aria-label="ExploreMorocco-Accueil">
+            <img src="images/Explore Morocco Logo.png" alt="Logo ExploreMorocco" width="75">
+        </a>
+        <button id="menu-button" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="menu-principal">☰</button>
+        <nav id="menu-principal">
+            <a href="Accueil.html">Accueil</a>
+            <span id="villes-wrapper">
+                <a href="#" id="btn-villes" aria-expanded="false" aria-controls="liste-villes">Meilleures villes</a>
+                <span id="liste-villes" style="display: none;">
+                    <a href="villes/Chefchaouen.html">Chefchaouen</a>
+                    <a href="villes/Rabat.html">Rabat</a>
+                    <a href="villes/Ouarzazate.html">Ouarzazate</a>
+                    <a href="villes/Marrakech.html">Marrakech</a>
+                    <a href="villes/Fès.html">Fès</a>
+                    <a href="villes/Casablanca.html">Casablanca</a>
+                </span>
+            </span>
+            <a href="#">Zones naturelles</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
 
+    <main>
+        <section id="bienvenue">
+            <h1>Bienvenue sur ExploreMorocco</h1>
+            <p>Partez à la découverte du Maroc, un pays très riche en histoire, en culture et en paysages magnifiques.</p>
+            <a href="#a-propos" class="btn">Découvrir notre projet</a>
+        </section>
+        <section id="a-propos">
+            <h2>À propos de notre site</h2>
+            <p>ExploreMorocco est un projet universitaire réalisé par un groupe d'étudiants passionnés par le Maroc.</p>
+            <p>Notre objectif est de vous aider à découvrir la richesse culturelle et naturelle de notre pays à travers des guides simples et illustrés.</p>
+        </section>
+        <section id="decouvrir">
+            <h2>Que voulez-vous explorer ?</h2>
+            <div class="cards">
+    <article>
+        <h3>Les Villes Impériales</h3>
+        <p>De Marrakech à Fès, découvrez l'histoire et la médina des plus belles villes.</p><br>
+        <a href="villes.html" aria-label="Voir les villes">Explorer🕌</a>
+    </article>
+
+    <article>
+        <h3>Zones Naturelles</h3>
+        <p>Du désert de Merzouga aux montagnes de Chefchaouen, explorez des paysages magnifiques.</p>
+        <a href="nature.html" aria-label="Voir la nature">Découvrir🏜️</a>
+    </article>
+
+    <article>
+        <h3>Contactez-nous</h3>
+        <p>Une question ? Une suggestion ? L'équipe est à votre écoute.</p><br>
+        <a href="contact.html" aria-label="Nous contacter">Contacter📩</a>
+    </article>
+</div>
+        </section>
+    </main>
+
+    <footer>
+        <p align="center">&copy; 2026 ExploreMorocco Réalisé par : </p> 
+        <p align="center">Ahmed El Baz, Salaheddine Chtioui, Yassine Barkouch, Ayoub Ait Merri</p>
+    </footer>
+</body>
+</html>
