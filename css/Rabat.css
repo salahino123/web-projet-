@@ -1,0 +1,183 @@
+
+/* =================================
+   STYLE GENERAL - RABAT
+================================= */
+
+#page-rabat {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f6f7;
+    color: #263b43;
+    line-height: 1.7;
+}
+
+/* =================================
+   HEADER
+================================= */
+
+#page-rabat #bienvenueChef {
+    background: linear-gradient(135deg, #075b78, #1595a5);
+    color: white;
+    text-align: center;
+    padding: 55px 20px;
+    border-radius: 0 0 25px 25px;
+}
+
+#page-rabat #bienvenueChef h1 {
+    font-size: 40px;
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+}
+
+#page-rabat #bienvenueChef p {
+    font-size: 17px;
+    max-width: 800px;
+    margin: auto;
+}
+
+/* =================================
+   NAVIGATION
+================================= */
+
+#page-rabat #main-nav {
+    background-color: #06485d;
+    padding: 16px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-radius: 12px;
+    margin: 15px 20px;
+}
+
+#page-rabat #main-nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 12px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+#page-rabat #main-nav a:hover,
+#page-rabat #main-nav a.active {
+    color: #f4d58d;
+}
+
+/* =================================
+   SECTIONS
+================================= */
+
+#page-rabat #section-medina,
+#page-rabat #section-galerie {
+    background-color: white;
+    max-width: 1100px;
+    margin: 35px auto;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+#page-rabat h2 {
+    color: #08758a;
+    border-left: 5px solid #1595a5;
+    padding-left: 12px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+/* =================================
+   PARAGRAPHS
+================================= */
+
+#page-rabat #section-medina p,
+#page-rabat #section-galerie p {
+    text-align: justify;
+}
+
+/* =================================
+   LISTS
+================================= */
+
+#page-rabat #section-medina ul {
+    padding-left: 25px;
+}
+
+#page-rabat #section-medina li {
+    margin-bottom: 12px;
+}
+
+#page-rabat #section-medina li strong {
+    color: #08758a;
+}
+
+/* =================================
+   GALLERY
+================================= */
+
+#page-rabat .galerie-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 25px;
+}
+
+#page-rabat .galerie-img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#page-rabat .galerie-img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+/* =================================
+   FOOTER
+================================= */
+
+#page-rabat #main-footer {
+    background-color: #06485d;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    border-radius: 20px 20px 0 0;
+}
+
+#page-rabat #main-footer p {
+    margin: 5px;
+}
+
+/* =================================
+   RESPONSIVE DESIGN
+================================= */
+
+@media (max-width: 768px) {
+
+    #page-rabat #bienvenueChef h1 {
+        font-size: 30px;
+    }
+
+    #page-rabat #main-nav a {
+        display: inline-block;
+        margin: 7px;
+    }
+
+    #page-rabat #section-medina,
+    #page-rabat #section-galerie {
+        margin: 20px 12px;
+        padding: 20px;
+    }
+
+    #page-rabat .galerie-grid {
+        grid-template-columns: 1fr;
+    }
+
+    #page-rabat .galerie-img {
+        height: 220px;
+    }
+}
